@@ -1,0 +1,23 @@
+{
+  "name": "node-red-contrib-azure-eventhubs",
+  "version": "0.0.1",
+  "description": "Node to send events to Azure EVent hubs from node-RED",
+  "dependencies": {
+    },
+  "keywords": [ "node-red" ],
+  "node-red"     : {
+        "nodes": {
+            "EventHub": "eventHub.js"
+        }
+    },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sreesharp/Node-RED-Azure-EventHub.git"
+  },
+  "author": "Sreejumon <Sreejumon@gmail.com> (http://sreesharp.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sreesharp/Node-RED-Azure-EventHub/issues"
+  },
+  "homepage": "https://github.com/sreesharp/Node-RED-Azure-EventHub"
+}

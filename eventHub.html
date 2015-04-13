@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    RED.nodes.registerType('azure-eventhub',{
+        // node definition
+    });
+</script>
+
+<script type="text/x-red" data-template-name="azure-eventhub">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="azure-eventhub">
+   <p>Some useful help text about the node.</p>
+   <p>Outputs an object called <b>msg</b> containing <b>msg.topic</b> and
+   <b>msg.payload</b>. msg.payload is a String.</p>
+</script>
