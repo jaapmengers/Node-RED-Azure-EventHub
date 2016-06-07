@@ -1,13 +1,43 @@
 <script type="text/javascript">
     RED.nodes.registerType('azure-eventhub',{
-        // node definition
+        category: 'cloud-function',
+        color:"rgb(0, 171, 237)",
+        paletteLabel: "Azure IOT",
+        label: function() {
+            return this.name||"Azure IOT";
+        },
+        labelStyle: function() {
+            return this.name?"node_label_italic":"";
+        },
+        icon: "white-globe.png",
+        align: "right",
+        defaults: {
+            namespace = {value:"",required:true},
+            hubName = {value:"",required:true},
+            saName = {value:"",required:true},
+            saKey = {value:"",required:true}
+        },
+        inputs:1,
+        outputs:0
     });
 </script>
 
 <script type="text/x-red" data-template-name="azure-eventhub">
     <div class="form-row">
-        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
-        <input type="text" id="node-input-name" placeholder="Name">
+        <label for="node-input-namespace"><i class="icon-tag"></i> namespace</label>
+        <input type="text" id="node-input-namespace" placeholder="namespace">
+    </div>
+    <div class="form-row">
+        <label for="node-input-hubname"><i class="icon-tag"></i> hubName</label>
+        <input type="text" id="node-input-hubname" placeholder="hubname">
+    </div>
+    <div class="form-row">
+        <label for="node-input-saname"><i class="icon-tag"></i> saName</label>
+        <input type="text" id="node-input-saname" placeholder="saname">
+    </div>
+    <div class="form-row">
+        <label for="node-input-sakey"><i class="icon-tag"></i> saKey</label>
+        <input type="text" id="node-input-sakey" placeholder="sakey">
     </div>
 </script>
 
