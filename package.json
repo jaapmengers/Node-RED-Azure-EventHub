@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "description": "Node to send events to Azure EVent hubs from node-RED",
   "dependencies": {
+    "crypto": "0.0.3",
+     "utf8": "^2.1.1"
     },
   "keywords": [ "node-red" ],
   "node-red"     : {
