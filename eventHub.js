@@ -20,9 +20,9 @@ module.exports = function(RED) {
                 var body = '{ "temp":"' + msg +'"}';
                 
                 var namespace = config.namespace;
-                var hubName = config.hubName;
-                var saName = config.saName;
-                var saKey = config.saKey;
+                var hubName = config.hubname;
+                var saName = config.saname;
+                var saKey = config.sakey;
                 var token = saToken.create(namespace, hubName, saName, saKey);
                 var serviceBusUriSuffix = '?timeout=60&api-version=2014-01';
 
