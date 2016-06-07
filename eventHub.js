@@ -17,7 +17,7 @@ module.exports = function(RED) {
             this.on('input', function(msg) {
 
                 //var body = '{ "device": "laptop", "message": "My message body." }';
-                var body = '{ "temp":"' + msg +'"}'
+                var body = '{ "temp":"' + msg +'"}';
                 //TODO: Hard code the event hub param for time being
                 var namespace = 'nodered-demo-ns';
                 var hubName = 'nodered-demo';
