@@ -18,11 +18,11 @@ module.exports = function(RED) {
 
                 //var body = '{ "device": "laptop", "message": "My message body." }';
                 var body = '{ "temp":"' + msg +'"}';
-                //TODO: Hard code the event hub param for time being
-                var namespace = 'nodered-demo-ns';
-                var hubName = 'nodered-demo';
-                var saName = 'noderedpolicy';
-                var saKey = 'Mgf6iDOeqomjJKH+0qnzjWsNIDh8A+8qTh8eur4q0i8=';
+                
+                var namespace = config.namespace;
+                var hubName = config.hubName;
+                var saName = config.saName;
+                var saKey = config.saKey;
                 var token = saToken.create(namespace, hubName, saName, saKey);
                 var serviceBusUriSuffix = '?timeout=60&api-version=2014-01';
 
