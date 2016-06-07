@@ -16,8 +16,6 @@ module.exports = function(RED) {
             eventHubs.sendMessage({
                 message: msg.payload,
                 deviceId: 1,
-            }).then(function() {
-                console.log('Message Sent!');
             });
         });
     }
