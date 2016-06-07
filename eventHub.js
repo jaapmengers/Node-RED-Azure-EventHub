@@ -1,9 +1,8 @@
 
 module.exports = function(RED) {
-    var request = require('request');
-    var saToken = require('./saToken.js');
-    
     function AzureEventHub(config) {
+        var request = require('request');
+        var saToken = require('./saToken.js');
         
         RED.nodes.createNode(this,config);
         var node = this;
